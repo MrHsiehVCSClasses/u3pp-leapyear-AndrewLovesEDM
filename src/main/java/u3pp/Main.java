@@ -3,25 +3,29 @@ package u3pp;
 import java.util.Scanner;
 
 /**
- * YOUR COMMENTS HERE
+ * create scanner and make scanner equal the input
  * 
- * @author YOUR NAME HERE
+ * 
+ * @author Andrew Das
  */
 
 class Main {
 
 	public static void main(String[] args) {
 
-		//YOUR CODE HERE
-
+		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a year (or enter STOP to end): ");
 		String input = sc.nextLine();
 
 		while (!input.toUpperCase().equals("STOP")) {
-			/* YOUR CODE HERE */
 			System.out.print("Enter a year (or enter STOP to end): ");
-			//YOUR CODE HERE
+			input = sc.nextLine();
+			int baller = Integer.parseInt(input);
+			//int LeapYear;
+			LeapYear.isLeapYear(input);
+			
+			
 		}
-		//YOUR CODE HERE
+		sc.close();
 	}
 }
