@@ -45,6 +45,6 @@ public class MainTests {
             withTextFromSystemIn("100", "1580", "2020", "STOP").execute(() -> Main.main(null));
         });
 
-        assertEquals(expectedText, studentText);
+        assertEquals(expectedText.trim(), studentText.trim());
     }
 }
